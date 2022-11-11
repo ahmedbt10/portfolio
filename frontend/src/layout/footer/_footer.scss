@@ -1,0 +1,55 @@
+@import "../../style/colors";
+
+footer{
+    position: relative;
+    bottom:0;
+    padding: 1.777em 3.55em;
+    border-top: 2px solid $black-25;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media only  screen and (max-width: 790px) {
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: space-around;
+    }
+    #footer-first-section{
+        #copyright{
+            font-size: 0.833rem;
+            color:$black-75
+        }
+    }
+    #footer-second-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:1.77em;
+        .footer-links{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap:1.77em;
+
+            @media only  screen and (max-width: 790px) {
+                flex-direction: column-reverse;
+                gap: 0;
+            }
+        }
+        .vertical-line{
+            background-color: $black-25;
+            width: 2px;
+            height: 30px;
+        }
+        #social-media{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap:1.77em;
+            .icon{
+                width: 1.77rem;
+                height: 1.77rem;
+            }
+        }
+    }
+
+}

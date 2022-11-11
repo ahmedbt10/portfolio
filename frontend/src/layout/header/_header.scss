@@ -1,0 +1,96 @@
+@import "../../style/colors";
+
+header{
+    padding: 1.777em 3.55em;
+    border-bottom: 2px solid $black-25;
+
+    @media only  screen and (max-width: 560px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #header-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        #header-first-section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap:3.55em;
+            #logo{
+                font-size: 1.77rem!important;
+                color:$primary-light-color;
+                font-weight: 900;
+                max-width: 22.22em;
+            }
+            #navbar{
+                #navlist{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap:1.77em;
+                }
+            }
+        }
+
+        
+
+        #header-second-section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap:3.55em;
+            #email-phone{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 0.722rem;
+                font-weight: 700;
+                gap: 1.33em;
+                #email{
+                    color:$secondary-light-color;
+                }
+                @media only  screen and (max-width: 560px) {
+                    flex-direction: column-reverse;
+                    gap: 0;
+                }
+            }
+            #social-media{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap:1.77em;
+                .icon{
+                    width: 1.77rem;
+                    height: 1.77rem;
+                }
+            }
+            .vertical-line{
+                background-color: $black-25;
+                width: 2px;
+                height: 30px;
+            }
+        }
+        #toggle-btn{
+            background: transparent;
+            border: none;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+        @media only  screen and (max-width: 560px) {
+            justify-content: space-around;
+        }
+    }
+    #navbar-responsive{
+        margin-top: 1.777em;
+        #navlist{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:1.77em;
+        }
+    }
+}

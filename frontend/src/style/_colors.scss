@@ -1,0 +1,10 @@
+$primary-light-color:#CD295A;
+$secondary-light-color:#136780;
+$gradient-light-color:
+    linear-gradient(to bottom,var($primary-light-color),var($secondary-light-color));
+$black-100: #292224;
+$black-90: rgba(41, 34, 36,0.9);
+$black-75: rgba(41, 34, 36,0.75);
+$black-50: rgba(41, 34, 36,0.5);
+$black-25: rgba(41, 34, 36,0.25);
+$black-10: rgba(41, 34, 36,0.1);
