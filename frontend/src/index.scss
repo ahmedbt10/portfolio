@@ -8,7 +8,7 @@
 }
 :root {
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -37,16 +37,50 @@
     h6 ,.h6{
         font-size: 1rem;
     }
-    .p{
+    p,.p{
         font-weight: 500;
+        color:$black-75;
+    }
+    main{
+        .big-section{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap:1.77em;
+        }
+        button{
+            padding: 1.33em 2.66em;
+            font-weight: 700;
+            font-size: 1.125em;
+            border-radius: 100px;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #primary-btn{
+            
+            background-color: $secondary-light-color;
+            color:rgba($color: $white-color, $alpha: 0.75);
+        }
+        #secondary-btn{
+            background-color: transparent;
+            border: 4px solid $black-100;
+            color:$black-100;
+
+        }
+        
     }
 
     @media only  screen and (max-width: 1132px) {
-        font-size: 16px;
-    }
-    @media only  screen and (max-width: 980px) {
         font-size: 14px;
     }
+    // @media only  screen and (max-width: 980px) {
+    //     font-size: 14px;
+    // }
 }
 
 

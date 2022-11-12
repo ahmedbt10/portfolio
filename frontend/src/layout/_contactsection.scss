@@ -1,0 +1,44 @@
+@import "../style/colors";
+#contact-section{
+    flex-direction: row;
+    #contact-details-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap:5.33em;
+        #contact-details-section{
+            @extend #contact-details-container ;
+            gap: 1.77em;
+            h1 {
+                text-align: start;
+                max-width: 36.44rem;
+            }
+            p{
+                text-align: start;
+                max-width: 30.11rem;
+            }
+            #email-phone{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 0.722rem;
+                p{
+                    font-weight: 700;
+                }
+                gap: 1.33em;
+                #email{
+                    color:$secondary-light-color;
+                }
+                #phone-num{
+                    color:$black-100;
+                }}
+        }
+    }
+    #contact-svg{
+        img{
+            width: 28.44rem;
+            height: 23.33rem;
+        }
+    }
+}

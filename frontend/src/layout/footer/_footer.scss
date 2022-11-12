@@ -8,6 +8,12 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 860px){
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap:1em;
+        
+    }
     @media only  screen and (max-width: 790px) {
         padding-left: 0;
         padding-right: 0;
@@ -29,11 +35,6 @@ footer{
             align-items: center;
             justify-content: space-between;
             gap:1.77em;
-
-            @media only  screen and (max-width: 790px) {
-                flex-direction: column-reverse;
-                gap: 0;
-            }
         }
         .vertical-line{
             background-color: $black-25;
@@ -49,6 +50,11 @@ footer{
                 width: 1.77rem;
                 height: 1.77rem;
             }
+        }
+        @media only screen and (max-width: 860px){
+            flex-direction: column-reverse;
+            justify-content: center;
+            gap: 1em;
         }
     }
 

@@ -1,0 +1,51 @@
+#work-section{
+    height: 100vh;
+    gap: 3.55em;
+    justify-content: center;
+    #headings-work-section{
+        display: flex;
+        flex-direction: column;
+        gap:1.33em;
+        h1{
+            font-weight: bold;
+        }
+        #abilites{
+            max-width: 39.22rem;
+        }
+    }
+
+    #work-show{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #display-devices-section{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            #phone-img{
+                width: 4.52rem;
+                height: 8.05rem;
+            }
+            #laptop-img{
+                width: 27.77rem;
+                height: 15.51rem;
+            }
+        }
+        #work-description-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:1.33em;
+            .separator{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:1.77em;
+                #work-description{
+                    max-width: 420px;
+                }
+            }
+        }
+    }
+}

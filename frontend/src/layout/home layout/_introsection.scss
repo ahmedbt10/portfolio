@@ -1,0 +1,21 @@
+@import "../../style/colors";
+#intro-section{
+    h1{
+      background-image: linear-gradient(to bottom,$primary-light-color,$secondary-light-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .separator{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.65em;
+        .description{
+          max-width: 50.55rem;
+        }
+    }
+
+}
