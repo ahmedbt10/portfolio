@@ -8,7 +8,7 @@
 }
 :root {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -19,20 +19,35 @@
         text-decoration: none;
     }
     h1 ,.h1{
-        font-size: 5.653rem;
+        font-size: 4.209rem;
+        @media only  screen and (max-width: 838px) {
+            font-size: 3.052rem;
+        }
     }
     h2 ,.h2{
-        font-size: 3.998rem;
+        font-size: 3.157rem;
+        @media only  screen and (max-width: 838px) {
+            font-size: 2.441rem;
+        }
     }
     h3 ,.h3{
-        font-size: 2.827rem;
+        font-size: 2.369rem;
         font-weight: normal;
+        @media only  screen and (max-width: 838px) {
+            font-size: 1.953rem;
+        }
     }
     h4 ,.h4{
-        font-size: 1.999rem;
+        font-size: 1.777rem;
+        @media only  screen and (max-width: 838px) {
+            font-size: 1.563rem;
+        }
     }
     h5 ,.h5{
-        font-size: 1.414rem;
+        font-size: 1.333rem;
+        @media only  screen and (max-width: 838px) {
+            font-size: 1.25rem;
+        }
     }
     h6 ,.h6{
         font-size: 1rem;
@@ -76,11 +91,11 @@
     }
 
     @media only  screen and (max-width: 1132px) {
+        font-size: 16px;
+    }
+    @media only  screen and (max-width: 1000px) {
         font-size: 14px;
     }
-    // @media only  screen and (max-width: 980px) {
-    //     font-size: 14px;
-    // }
 }
 
 

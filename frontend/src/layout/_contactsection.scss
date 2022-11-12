@@ -1,14 +1,26 @@
 @import "../style/colors";
 #contact-section{
     flex-direction: row;
+    @media only  screen and (max-width: 776px) {
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+    }
     #contact-details-container{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        gap:5.33em;
+        gap:2.33em;
+        @media only  screen and (max-width: 408px) {
+            align-items: center;
+        }
+
         #contact-details-section{
-            @extend #contact-details-container ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-left: 0;
             gap: 1.77em;
             h1 {
                 text-align: start;
@@ -34,11 +46,22 @@
                     color:$black-100;
                 }}
         }
+        
     }
     #contact-svg{
+        display: flex;
+        width: auto;
         img{
+            position:relative;
+            top:3.15em;
             width: 28.44rem;
             height: 23.33rem;
+            @media only  screen and (max-width: 776px) {
+                display: none;
+            }
         }
     }
+    padding-top: 3.05em;
+    padding-bottom: 3.05em;
+
 }

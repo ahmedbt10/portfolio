@@ -13,9 +13,7 @@ header{
         align-items: center;
         justify-content: space-between;
         #header-first-section{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @extend #header-container ;
             gap:3.55em;
             #logo{
                 font-size: 1.77rem!important;
@@ -25,10 +23,8 @@ header{
             }
             #navbar{
                 #navlist{
+                    @extend #header-first-section ;
                     list-style: none;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
                     gap:1.77em;
                 }
             }
@@ -42,14 +38,12 @@ header{
             justify-content: space-between;
             gap:3.55em;
             #email-phone{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                @extend #header-first-section ;
                 font-size: 0.722rem;
+                gap: 1.33em;
                 p{
                     font-weight: 700;
                 }
-                gap: 1.33em;
                 #email{
                     color:$secondary-light-color;
                 }
@@ -62,9 +56,7 @@ header{
                 }
             }
             #social-media{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                @extend #header-first-section ;
                 gap:1.77em;
                 .icon{
                     width: 1.77rem;

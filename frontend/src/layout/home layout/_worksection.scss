@@ -1,5 +1,6 @@
 #work-section{
     height: 100vh;
+    padding: 0 3.5em;
     gap: 3.55em;
     justify-content: center;
     #headings-work-section{
@@ -19,17 +20,27 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media only  screen and (max-width: 800px) {
+            flex-direction: column;
+            gap: 3.55em;
+        }
         #display-devices-section{
             display: flex;
             align-items: center;
             justify-content: flex-start;
             #phone-img{
-                width: 4.52rem;
+                width: 4.10rem;
                 height: 8.05rem;
+                @media only  screen and (max-width: 600px) {
+                    display: none;
+                }
             }
             #laptop-img{
-                width: 27.77rem;
+                width: 26.8323rem;
                 height: 15.51rem;
+                @media only  screen and (max-width: 600px) {
+                    transform: scale(0.7);
+                }
             }
         }
         #work-description-section{
@@ -38,9 +49,7 @@
             align-items: center;
             gap:1.33em;
             .separator{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @extend #work-description-section ;
                 gap:1.77em;
                 #work-description{
                     max-width: 420px;

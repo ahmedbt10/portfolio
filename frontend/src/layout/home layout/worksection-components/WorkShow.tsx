@@ -16,7 +16,7 @@ const WorkShow = () => {
                     and reporting throughout teams, operations 
                     and supply chains.
                 </p>
-                <Button content="Visit Website" src="" id="secondary-btn"/>
+                <Button content="Visit Website" src="" id="secondary-btn" respContent="" respSrc=""/>
             </div>
         </section>
     </section>

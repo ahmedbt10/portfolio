@@ -20,7 +20,7 @@ const IntroSection = () => {
                 server side field.
             </p>
             </section>
-            <Button content="See my Work" src={arrowDown} id="primary-btn"/>
+            <Button content="See my Work" src={arrowDown} id="primary-btn" respContent="" respSrc=""/>
         </div>
       </section>
   )
