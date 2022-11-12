@@ -77,14 +77,20 @@
             justify-content: space-between;
         }
         #primary-btn{
-            
             background-color: $secondary-light-color;
-            color:rgba($color: $white-color, $alpha: 0.75);
+            color: $white-color;
+            &:hover{
+                background: linear-gradient(to bottom,$primary-light-color,$secondary-light-color);
+            }
         }
         #secondary-btn{
             background-color: transparent;
             border: 4px solid $black-100;
             color:$black-100;
+            &:hover{
+                background-color: $black-100;
+                color:#DBDBDB;
+            }
 
         }
         

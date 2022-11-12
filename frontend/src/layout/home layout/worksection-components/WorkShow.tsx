@@ -1,6 +1,7 @@
 import phone from "../../../assets/phone.png"
 import laptop from "../../../assets/laptop.png"
 import Button from "../../../components/Button"
+import Slider from "../../../components/Slider"
 const WorkShow = () => {
   return (
     <section id="work-show">
@@ -18,6 +19,9 @@ const WorkShow = () => {
                 </p>
                 <Button content="Visit Website" src="" id="secondary-btn" respContent="" respSrc=""/>
             </div>
+            <Slider>
+                <h2 className="h5">Projects</h2>
+            </Slider>
         </section>
     </section>
   )

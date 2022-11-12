@@ -31,7 +31,7 @@ const Header = () => {
             </section>
             {isSmallerThan860?<MenuIcon isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>:""}
         </div>
-        {isOpen&&isSmallerThan860?<Navbar responsive={isOpen}/>:""}
+        {isOpen&&isSmallerThan860?<section id="navbar-responsive-container"><Navbar responsive={isOpen}/><SocialIcons/></section>:""}
     </header>
   )
 }

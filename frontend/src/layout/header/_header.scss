@@ -8,6 +8,19 @@ header{
         padding-left: 0;
         padding-right: 0;
     }
+    #social-media{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:1.77em;
+        .icon{
+            width: 1.77rem;
+            height: 1.77rem;
+        }
+        max-width: 160px;
+    }
+
+
     #header-container{
         display: flex;
         align-items: center;
@@ -55,14 +68,6 @@ header{
                     gap: 0;
                 }
             }
-            #social-media{
-                @extend #header-first-section ;
-                gap:1.77em;
-                .icon{
-                    width: 1.77rem;
-                    height: 1.77rem;
-                }
-            }
             .vertical-line{
                 background-color: $black-25;
                 width: 2px;
@@ -89,5 +94,11 @@ header{
             justify-content: center;
             gap:1.77em;
         }
+    }
+    #navbar-responsive-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.33em;
     }
 }
