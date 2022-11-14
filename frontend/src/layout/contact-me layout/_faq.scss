@@ -1,0 +1,51 @@
+@import "../../style/colors";
+#faq-section{
+    padding: 3.05em 3.5em;
+    padding-right:0;
+    display: flex;
+    justify-content: space-between;
+    @media only  screen and (max-width: 898px) {
+        padding-right: 3.5em;
+    }
+    #faq-section-details{
+        display: flex;
+        flex-direction: column;
+        gap: 2.22em;
+        #questions-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap:1.77em;
+        .list-item{
+            display: flex;
+            flex-direction: column;
+            gap: 1.33em;
+            .list-item-question{
+                display: flex;
+                align-items: center;
+                gap:1.33em;
+                .question-btn{
+                    width: 32px;
+                    height: 32px;
+                    padding: 0;
+                    background-color: transparent;
+                    border:none
+                }
+            }
+            .list-item-answer{
+                padding-left: 3.5em;
+            }
+        }
+    }
+    }
+    #faq-section-illustration{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        img{
+            width: 33.33rem;
+            height: 23.488rem;
+        }
+    }
+}
+

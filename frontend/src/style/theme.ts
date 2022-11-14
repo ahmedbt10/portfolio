@@ -1,4 +1,5 @@
 import {extendTheme} from "@chakra-ui/react"
+import { inputTheme } from "./input"
 const theme = extendTheme({
     fonts: {
         body:`'Montserrat', sans-serif`,
@@ -20,8 +21,11 @@ const theme = extendTheme({
         },
         white:{
             100:"#FBFBFB"
-        }
-    }
+        },
+        error:"#85062C"
+    },
+    components:{Input:inputTheme},
+    
 })
 
 export default theme

@@ -30,9 +30,11 @@ header{
             gap:3.55em;
             #logo{
                 font-size: 1.77rem!important;
-                color:$primary-light-color;
                 font-weight: 900;
                 max-width: 22.22em;
+                a{
+                    color:$primary-light-color;
+                }
             }
             #navbar{
                 #navlist{
@@ -56,9 +58,6 @@ header{
                 gap: 1.33em;
                 p{
                     font-weight: 700;
-                }
-                #email{
-                    color:$secondary-light-color;
                 }
                 #phone-num{
                     color:$black-100;

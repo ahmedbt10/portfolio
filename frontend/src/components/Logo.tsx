@@ -2,7 +2,7 @@ import {Link} from "react-router-dom"
 const Logo = () => {
   return (
     <h1 id="logo">
-      <Link id="logo" to="/">ABT</Link>
+      <Link to="/">AB10</Link>
     </h1>
   )
 }
