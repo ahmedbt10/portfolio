@@ -24,9 +24,11 @@ const ContactSection = () => {
             <Button
               content="Got a Project in Mind ? Contact Me!"
               src=""
-              id="primary-btn"
+              id="toContact-btn"
+              className="primary-btn"
               respContent="Contact Me!"
               respSrc=""
+              onClick={()=>true}
               ></Button>
           </Link>
         </section>

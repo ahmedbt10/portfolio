@@ -28,14 +28,6 @@ header{
         #header-first-section{
             @extend #header-container ;
             gap:3.55em;
-            #logo{
-                font-size: 1.77rem!important;
-                font-weight: 900;
-                max-width: 22.22em;
-                a{
-                    color:$primary-light-color;
-                }
-            }
             #navbar{
                 #navlist{
                     @extend #header-first-section ;

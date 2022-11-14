@@ -2,7 +2,6 @@
     padding: 3.05em 3.5em;
     display: flex;
     align-items: center;
-    height: 100vh;
     justify-content: space-between;
     @media only  screen and (max-width: 886px) {
         flex-direction: column;
@@ -10,5 +9,8 @@
     }
     h1{
         max-width: 35.833rem;
+        @media only  screen and (max-width: 886px) {
+            text-align: center;
+        }
     }
 }

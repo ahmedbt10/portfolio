@@ -1,5 +1,5 @@
 import "./_form.scss"
-import {ChakraProvider,FormControl,FormLabel,Input,Textarea} from "@chakra-ui/react"
+import {ChakraProvider} from "@chakra-ui/react"
 import sendIconSrc from "../../../assets/send.png"
 import Button from "../../../components/Button"
 import theme from "../../../style/theme"
@@ -41,7 +41,7 @@ const Form = () => {
 
     const handleSubmit = (e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
-        if (!thereError) alert("sumbit")
+        if (!thereError) window.location.reload();
     }
   return (
     <ChakraProvider theme={theme}>
@@ -60,9 +60,10 @@ const Form = () => {
                 </div>
             </div>
             <Button
+                id="submit-btn"
                 content="Send Me That" 
                 src={sendIconSrc} 
-                id="primary-btn" 
+                className="primary-btn" 
                 respContent="Send" 
                 respSrc={sendIconSrc} 
                 onClick={()=>handleClick()}

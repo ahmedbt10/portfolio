@@ -17,7 +17,7 @@ const WorkShow = () => {
                     and reporting throughout teams, operations 
                     and supply chains.
                 </p>
-                <Button content="Visit Website" src="" id="secondary-btn" respContent="" respSrc=""/>
+                <Button content="Visit Website" src="" id="visit-btn" className="secondary-btn" respContent="" respSrc="" onClick={()=>true}/>
             </div>
             <Slider>
                 <h2 className="h5">Projects</h2>

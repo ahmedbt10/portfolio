@@ -30,7 +30,7 @@ const FaqSection = () => {
                 here are some things you <span className="primary-color">should</span> know:
             </h1>
             <ul id="questions-list">
-                {questions.map((question,index)=><QuestionAnswer key={"question"+index} question={question.question} answer={question.answer}/>)}
+                {questions.map((question,index)=><QuestionAnswer id={"question"+index} key={"question"+index} question={question.question} answer={question.answer}/>)}
             </ul>
         </section>
         {isSmallerThan898?"":

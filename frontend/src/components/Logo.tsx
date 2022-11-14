@@ -1,9 +1,11 @@
 import {Link} from "react-router-dom"
+import logoSrc from "../assets/AB10.png"
 const Logo = () => {
   return (
-    <h1 id="logo">
-      <Link to="/">AB10</Link>
-    </h1>
+      <Link to="/">
+        <img src={logoSrc} alt="logo" id="logo"/>
+      </Link>
+    
   )
 }
 
