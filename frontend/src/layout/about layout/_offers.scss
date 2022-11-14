@@ -1,0 +1,46 @@
+@import "../../style/colors";
+#offers-section-container{
+    padding: 5.33em 10.66em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.66em;
+    @media only  screen and (max-width: 844px) {
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+    }
+    h1{
+        font-weight: 600;
+        text-align: center;
+    }
+    #offers-section{
+        #offers-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap:2.66rem;
+            @media only  screen and (max-width: 727px) {
+                flex-direction: column;
+                p{
+                    text-align: center
+                }
+            }
+            .list-item-container{
+                @extend #offers-list ;
+                align-items: center;
+                flex-direction: column;
+                gap:1.33em;
+                .offer-icon{
+                    width: 14.22rem ;
+                    height: 14.22rem;
+                    @media only  screen and (max-width: 786px) {
+                        transform: scale(0.8);
+                    }
+                }
+                .list-item{
+                    color:$black-90;
+                }
+            }
+        }
+    }
+}

@@ -15,6 +15,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+
+    .primary-color{
+        color: $primary-light-color;
+    }
+    .secondary-color {
+        color: $secondary-light-color;
+    }
     a{
         text-decoration: none;
     }
@@ -36,6 +43,10 @@
         @media only  screen and (max-width: 838px) {
             font-size: 1.953rem;
         }
+    }
+    .h3-bold{
+        @extend .h3 ;
+        font-weight: 600;
     }
     h4 ,.h4{
         font-size: 1.777rem;
@@ -63,7 +74,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            gap:1.77em;
+            gap:3.55em;
         }
         button{
             padding: 1.33em 2.66em;

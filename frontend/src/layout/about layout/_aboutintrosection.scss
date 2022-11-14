@@ -1,0 +1,38 @@
+@import "../../style/colors";
+#introduction{
+    padding: 5.33em 10.66em;
+    display: flex;
+    flex-direction: column;
+    gap:2.66em;
+    @media only  screen and (max-width: 929px) {
+        padding: 3.05em 3.5em;
+    }
+    #greeting{
+        background-image: linear-gradient(to bottom,$primary-light-color,$secondary-light-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #person-description{
+        display: flex;
+        flex-direction: column;
+        gap: 1.33em;
+    }
+    #gallery-section{
+        display: flex;
+        justify-content: space-evenly;
+        gap:1.33em;
+        align-items: center;
+        * {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            @media only  screen and (max-width: 765px) {
+                width: 100%;
+            }
+        }
+        @media only  screen and (max-width: 765px) {
+            flex-direction:column ;
+        }
+    }
+}

@@ -11,8 +11,8 @@ const ContactSection = () => {
         <section id="contact-details-container">
           <section id="contact-details-section">
             <h1 className="h4">
-              {`{name}! I'm currently 
-                avaialable for freelance work.`}
+              <span className="primary-color">{`{name}`}</span>! I'm currently 
+                avaialable for freelance work.
             </h1>
             <p> 
               If you want to hire a developer that likes
