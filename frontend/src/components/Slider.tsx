@@ -1,7 +1,7 @@
 import leftArrow75 from "../assets/left-arrow-75.png"
 import rightArrow75 from "../assets/right-arrow-75.png"
 
-const Slider = ({children}:{children:JSX.Element}) => {
+const Slider = ({children}:{children:JSX.Element|JSX.Element[]}) => {
   return (
     <div id="slider">
       <button>
