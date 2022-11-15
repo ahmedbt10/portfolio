@@ -17,7 +17,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<>
-        <FirstModal setName={setName}/>
+        {name===""&&<FirstModal setName={setName}/>}
         <NameContext.Provider value={name}>
           <Home />
         </NameContext.Provider>

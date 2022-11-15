@@ -2,6 +2,7 @@ import {ChakraProvider,Modal,ModalOverlay,ModalContent,ModalHeader,ModalCloseBut
 import {  useState } from "react"
 import Button from "../../../components/Button";
 import FormInput from "../../contact-me layout/formsection-components/FormInput";
+import "./_firstmodal.scss"
 import theme from "../../../style/theme"
 const FirstModal = ({setName}:{setName:React.Dispatch<React.SetStateAction<string>>}) => {
     const [isOpen,setIsOpen]=useState(true);
@@ -16,20 +17,22 @@ const FirstModal = ({setName}:{setName:React.Dispatch<React.SetStateAction<strin
         e.preventDefault()
         if (localName !== "" && !whiteSpaceRegExp.test(localName)){
             setName(localName);
-            alert("done");
             setIsOpen(false);
         }
     }
-    // const nameContext=useContext(NameContext);
-    // console.log(nameContext.value)
   return (
     <ChakraProvider theme={theme}>
-        <Modal isOpen={isOpen} onClose={()=>setIsOpen(false)}>
-            <ModalOverlay />
-            <ModalContent>
-            <ModalHeader textAlign="center">Type your Name</ModalHeader>
-                <form onSubmit={handleSubmit}>
-                    <ModalBody>
+        <Modal 
+            isCentered
+            size={"xl"}
+            isOpen={isOpen} 
+            onClose={()=>setIsOpen(false)}
+            closeOnOverlayClick={false}
+            >
+            <ModalOverlay/>
+            <ModalContent p="2em" margin={"1.33em"} gap={"1.77em"}>
+                <h1 className="h4 secondary-color" style={{textAlign:"center"}}>Type your Name</h1>
+                <form onSubmit={handleSubmit} style={{display:"flex",flexDirection:"column",gap:"1.77em",alignItems:"center"}}>
                         <FormInput 
                             placeholder="Your Name"
                             type="text"
@@ -39,8 +42,6 @@ const FirstModal = ({setName}:{setName:React.Dispatch<React.SetStateAction<strin
                             setEmptyError={setEmptyError}
                             setEmailError={()=>true}
                             />
-                    </ModalBody>
-                    <ModalFooter justifyContent="center">
                         <Button 
                             content="Continue" 
                             className="primary-btn" 
@@ -49,7 +50,6 @@ const FirstModal = ({setName}:{setName:React.Dispatch<React.SetStateAction<strin
                             respSrc=""
                             onClick={handleClick}
                             />
-                    </ModalFooter>
                 </form>
             </ModalContent>
         </Modal>

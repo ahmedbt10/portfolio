@@ -21,9 +21,10 @@ const Header = () => {
                 {isSmallerThan860?"":<Navbar responsive={false}/>}
             </section>
             <section id="header-second-section">
-                <EmailPhone/>
+                
                 {isSmallerThan860?"":
                 <>
+                    <EmailPhone/>
                     <div className="vertical-line"/>
                     <SocialIcons/>
                 </>}

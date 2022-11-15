@@ -1,5 +1,4 @@
 import {FormControl,FormLabel,Input,FormErrorMessage} from "@chakra-ui/react"
-import { useEffect, useState } from "react"
 const FormInput = (
     {placeholder,type,emailError,emptyError,onChange,setEmptyError,setEmailError}:
     {placeholder:string,type:string,emailError:boolean,emptyError:boolean,onChange:React.Dispatch<React.SetStateAction<string>>,
@@ -8,7 +7,7 @@ const FormInput = (
     }) => {
     return (
     <FormControl isInvalid={emptyError||emailError}>
-        <FormLabel className="h6">{`${placeholder}:`}</FormLabel>
+        <FormLabel className="h6" fontWeight={"none"}>{`${placeholder}:`}</FormLabel>
         <Input 
             type={type} 
             placeholder={placeholder} 
