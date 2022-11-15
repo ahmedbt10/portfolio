@@ -2,7 +2,7 @@ import {FormControl,FormLabel,Input,FormErrorMessage} from "@chakra-ui/react"
 import { useEffect, useState } from "react"
 const FormInput = (
     {placeholder,type,emailError,emptyError,onChange,setEmptyError,setEmailError}:
-    {placeholder:string,type:string,emailError:boolean,emptyError:boolean,onChange:Function,
+    {placeholder:string,type:string,emailError:boolean,emptyError:boolean,onChange:React.Dispatch<React.SetStateAction<string>>,
         setEmptyError:React.Dispatch<React.SetStateAction<boolean>>,
         setEmailError:React.Dispatch<React.SetStateAction<boolean>>
     }) => {

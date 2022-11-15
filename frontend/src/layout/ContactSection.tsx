@@ -4,14 +4,17 @@ import {Link} from "react-router-dom"
 import {useMediaQuery} from "@chakra-ui/react"
 import "./_contactsection.scss"
 import illustrationContact from "../assets/illustration-contact.png"
+import { useContext } from "react"
+import { NameContext } from "../context/NameContext"
 const ContactSection = () => {
   const [isSmallerThan776] = useMediaQuery('(max-width: 776px)')
+  const name=useContext(NameContext);
   return (
     <section id="contact-section" className="big-section">
         <section id="contact-details-container">
           <section id="contact-details-section">
             <h1 className="h4">
-              <span className="primary-color">{`{name}`}</span>! I'm currently 
+            {name?<><span id="username" className="primary-color">{name}</span> !</>:""}  I'm currently 
                 avaialable for freelance work.
             </h1>
             <p> 

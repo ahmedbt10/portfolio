@@ -1,11 +1,14 @@
 import Button from "../../components/Button"
 import arrowDown from "../../assets/arrow-down.png"
 import "./_introsection.scss"
+import { useContext } from "react"
+import { NameContext } from "../../context/NameContext"
 const IntroSection = () => {
+  const name = useContext(NameContext);
   return (
     <section id="intro-section" className="big-section">
         <h1 className="h3">
-          {`Hi ${"{name}"}, I'm Ahmed`}
+          Hi {name?<span id="username">{name}</span>:""}, I'm Ahmed
         </h1>
         <h2 className="h1">
           Web Designer & Self-taught Developer
