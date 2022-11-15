@@ -2,7 +2,6 @@ import {ChakraProvider,Modal,ModalOverlay,ModalContent,ModalHeader,ModalCloseBut
 import {  useState } from "react"
 import Button from "../../../components/Button";
 import FormInput from "../../contact-me layout/formsection-components/FormInput";
-import "./_firstmodal.scss"
 import theme from "../../../style/theme"
 const FirstModal = ({setName}:{setName:React.Dispatch<React.SetStateAction<string>>}) => {
     const [isOpen,setIsOpen]=useState(true);

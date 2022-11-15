@@ -15,12 +15,12 @@ function App() {
       
         <div className="App">
           <Header />
+          <NameContext.Provider value={name}>
           <Routes>
             <Route path="/" element={<>
         {name===""&&<FirstModal setName={setName}/>}
-        <NameContext.Provider value={name}>
           <Home />
-        </NameContext.Provider>
+        
       </>}/>
             <Route path="/about" element={<NameContext.Provider value={name}>
           <About />
@@ -29,6 +29,7 @@ function App() {
           <ContactMe />
         </NameContext.Provider>}/>
           </Routes>
+          </NameContext.Provider>
           <Footer/>
         </div>
   )
